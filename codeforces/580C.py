@@ -13,9 +13,9 @@ def bfs(n, m, cats, graph):
   visited = [False]*n
   path = [-1]*n
   q = Queue()
-  visited[0]=True
+  visited[0] = True
   q.put(0)
-  path[0]=cats[0]
+  path[0] = cats[0]
   while q.empty() == False:
     u = q.get()
     for i in graph[u]:

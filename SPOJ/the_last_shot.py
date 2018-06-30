@@ -8,7 +8,6 @@ class Scanner():
     def next():
         return Scanner.scanner.__next__()
 
-# n, m = map(int, input().split())
 n = int(Scanner.next())
 m = int(Scanner.next())
 graph = [[] for x in range(n)]
@@ -22,7 +21,7 @@ def possible_impact(graph, start):
   stack = []
   stack.append(start)
   visited[start]=True
-  count = 1 # 1
+  count = 1
   while len(stack) > 0:
     cur = stack.pop()
     for i in graph[cur]:

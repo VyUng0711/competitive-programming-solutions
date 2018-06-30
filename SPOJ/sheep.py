@@ -1,5 +1,6 @@
 from queue import Queue
 DIR = [(0, -1), (-1, 0), (0, 1), (1, 0)]
+
 def bfs(start_x, start_y, yard):
   num_sheep = 0
   num_wolves = 0
@@ -56,7 +57,6 @@ n, m = map(int, line.split())
 yard = [None] * n
 for i in range(n):
   yard[i] = list(input().strip())
-#print (yard)
 print (*count_total(n, m, yard))
 
     

@@ -1,9 +1,7 @@
 from queue import Queue
 DIR = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 def bfs(r1, c1, r2, c2, cave):
-  #visited = [[False]*len(cave[0]) for i in range(len(cave))]
   q = Queue()
-  #visited[r1][c1] == True
   q.put((r1, c1))
   while q.empty() == False:
     x, y = q.get()

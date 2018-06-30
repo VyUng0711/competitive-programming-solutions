@@ -26,19 +26,15 @@ while True:
         new_y = sy + dy
         if visited[new_x][new_y] == False and \
         (new_x, new_y) in board:
-          print ((new_x, new_y))
           possible_moves(board, new_x, new_y)
-  #         possible_moves(board, new_x', new_y')
     cnt -= 1
     visited[sx][sy] = False
   possible_moves(board, 0, 0)
-  #print (len(board))
   result = len(board)-max_cnt
   if result == 1: 
     print ("Case {}, {} square can not be reached.".format(case, result))
   else:
     print ("Case {}, {} squares can not be reached.".format(case, result))
     
-
 
 
