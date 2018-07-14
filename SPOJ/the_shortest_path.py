@@ -36,7 +36,7 @@ for i in range(n):
     neighbor, distance = map(int, input().split())
     neighbor_id = neighbor - 1
     graph[i].append(Node(neighbor_id, distance))
-    #graph[neighbor_id].append(Node(i, distance))
+
 r = int(input())
 for _ in range(r):
   s, d = input().split()

@@ -21,7 +21,6 @@ q = int(input())
 queries = []
 for _ in range(q):
   queries.append(int(input()))
-# print (queries) 
 
 def dijkstra (s):
   q = queue.PriorityQueue()
@@ -37,7 +36,6 @@ def dijkstra (s):
         
         
 dijkstra(u)
-# print (dist )
 
 for j in queries:
   if dist[j] == INF:
