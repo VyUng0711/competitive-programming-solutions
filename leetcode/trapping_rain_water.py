@@ -14,6 +14,7 @@ def trapping_rain_water(height):
   trapped_water = 0
   for k in range(0, len(height)):
     trapped_water += max(min(max_from_left[k], max_from_right[k]) - height[k],0)
+  
   print(max_from_left)
   print(max_from_right)
   return(trapped_water)
