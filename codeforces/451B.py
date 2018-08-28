@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/451/B
 def sort_the_array(n,a):
   s = sorted(a)
   left = 0

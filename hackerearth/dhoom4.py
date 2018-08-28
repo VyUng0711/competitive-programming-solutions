@@ -1,3 +1,4 @@
+# https://www.hackerearth.com/practice/algorithms/graphs/breadth-first-search/practice-problems/algorithm/dhoom-4/
 from queue import Queue
 path = [-1]*100001
 def bfs(start, target, keys):

@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/sort-colors/discuss/
 def dutch_flag(pivot_index, A):
 	pivot = A[pivot_index]
 	smaller = 0

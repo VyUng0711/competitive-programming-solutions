@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/731/A
 def night_at_the_musium(s):
   current='a'
   cur_index=0

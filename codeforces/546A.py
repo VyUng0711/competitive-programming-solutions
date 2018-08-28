@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/546/A
 #Complexity: O(1)
 def soldier_and_bananas(k, n, w):
   cost = k*((1+w)*w//2)

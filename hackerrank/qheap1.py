@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/qheap1/problem
 # Method 1:
 import heapq
 

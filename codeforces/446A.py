@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/446/A
 def fast_dzy_loves_sequence(a):
   a=[10**9]+a+[0]
   lens=[]

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/580/C
 from queue import Queue
 n, m = [int(x) for x in input().split()]
 cats = [int(x) for x in input().split()]

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/676/A
 def far_distance(array,n):
     index_min=array.index(1)
     index_max=array.index(n)

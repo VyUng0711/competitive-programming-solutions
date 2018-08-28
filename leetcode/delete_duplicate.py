@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 def delete_duplicates(A):
 	if not A:
 		return 0

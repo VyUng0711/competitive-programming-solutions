@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/499/B
 n,m=map(int,input().split())
 dict={}
 for i in range(m):

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/518/A
 def vitaly_and_strings(s,t):
   new_s=""
   table='abcdefghijklmnopqrstuvwxyz'

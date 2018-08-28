@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/first-unique-character-in-a-string/description/
 def firstUniqChar(s):
     if s == "":
         return -1

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/242/B
 def big_segment(left,right):
     low = min(left)
     up = max(right)

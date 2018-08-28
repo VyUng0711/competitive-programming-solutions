@@ -1,4 +1,4 @@
-
+# https://www.spoj.com/problems/UCV2013B/
 # Alice in Amsterdam
 # O(n^2 * m * t)  
 INF = float('inf')

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/430/B
 def balls_game(balls,x):
   counts=[]
   for b in range(len(balls)):

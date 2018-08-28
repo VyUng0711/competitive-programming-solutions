@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/MKJUMPS/
 case = 0
 while True:
   case += 1

@@ -1,3 +1,5 @@
+# https://www.spoj.com/problems/STPAR/
+
 def street_parade(l):
   stack=[]
   new_line=[]

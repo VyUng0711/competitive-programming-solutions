@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/489/A
 def swapsort(n,a):
   swaps=[]
   s=sorted(a)

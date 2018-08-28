@@ -1,3 +1,4 @@
+# https://www.hackerearth.com/practice/algorithms/graphs/shortest-path-algorithms/practice-problems/algorithm/monks-business-day/
 INF = float('inf')
 class Triad():
   def __init__(self, source, target, weight):

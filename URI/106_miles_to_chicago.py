@@ -1,3 +1,4 @@
+# https://www.urionlinejudge.com.br/judge/en/problems/view/1655
 INF = float('inf')
 class Triad():
 	def __init__(self, source, target, weight):

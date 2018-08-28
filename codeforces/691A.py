@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/691/A
 def check_jacket(n,l):
     if n==1:
         if l[0]==0:

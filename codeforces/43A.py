@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/43/A
 def football(num_lines,goals):
   scores={}
   for i in goals:

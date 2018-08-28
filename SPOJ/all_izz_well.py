@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/ALLIZWEL/
 import sys
 sys.setrecursionlimit(1000000)
 num_test_cases = int(input())

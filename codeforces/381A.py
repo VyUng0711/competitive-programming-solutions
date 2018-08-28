@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/381/A
 def sereja_and_dima(cards):
   s=0
   d=0

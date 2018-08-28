@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/540/C
 from queue import Queue
 DIR = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 def bfs(r1, c1, r2, c2, cave):

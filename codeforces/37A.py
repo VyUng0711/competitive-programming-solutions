@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/37/A
 def towers_2(n,l):
   sorted_l=sorted(l)
   sorted_l=sorted_l+[10000]

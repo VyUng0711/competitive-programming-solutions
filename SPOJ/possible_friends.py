@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/SOCIALNE/
 import copy
 INF = float('inf')
 

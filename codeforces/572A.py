@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/572/A
 def check_arrays(A,B,k,m):
     if A[k-1]<B[len(B)-m]:
         return "YES"

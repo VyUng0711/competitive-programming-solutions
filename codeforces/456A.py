@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/456/A
 def laptops(l):
   sort_by_price=sorted(l,key=lambda x:x[0])
   quality=[x[1]for x in sort_by_price]

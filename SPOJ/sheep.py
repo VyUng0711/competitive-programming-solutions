@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/KOZE/
 from queue import Queue
 DIR = [(0, -1), (-1, 0), (0, 1), (1, 0)]
 

@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/810/B
 def summer_sell_off(n,f,l):
   total=0
   a=[0]*n

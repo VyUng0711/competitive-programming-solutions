@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/520/A
 import string
 
 def pangram(input_string):

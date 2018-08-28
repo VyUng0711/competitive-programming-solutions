@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/600/B
 # Using array
 def less_or_equal(a, b):
   # O(nlogn + mlogm)

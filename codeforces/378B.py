@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/387/B
 def semifinals(l1,l2):
     output1=[0]*len(l1)
     output2=[0]*len(l2)

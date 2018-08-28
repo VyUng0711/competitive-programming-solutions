@@ -1,3 +1,4 @@
+# https://vjudge.net/problem/LightOJ-1002
 import queue
 INF = 10 ** 9
 

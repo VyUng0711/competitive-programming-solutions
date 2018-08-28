@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/768/A
 def oath(l):
   s=sorted(l)
   result=0

@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/TRAFFICN/en/
 import queue
 INF = 10 ** 9
 

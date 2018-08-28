@@ -1,3 +1,4 @@
+# http://www.lightoj.com/volume_showproblem.php?problem=1174
 import queue
 INF = 10 ** 9
 class Node:

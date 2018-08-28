@@ -1,3 +1,4 @@
+# UVA
 INF = 10 ** 9
 class Triad:
   def __init__(self, s, t, w):

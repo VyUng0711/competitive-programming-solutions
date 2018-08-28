@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/OPCPIZZA/
 def binary_search(a, left, right, x):
   while left <= right:
     mid = (left + right)//2

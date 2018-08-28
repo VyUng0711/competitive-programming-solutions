@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/TRVCOST/
 import queue
 import math
 INF = math.inf

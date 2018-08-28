@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/BENEFACT/
 def find_longest_path_from_node(graph, source):
   stack = []
   stack.append(source)

@@ -1,4 +1,4 @@
-
+# http://codeforces.com/problemset/problem/26/B
 def regular_bracket_sequence(brackets):
   wrong_open = []
   wrong_close = []

@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/implement-strstr/
 # Solution with string slicing:
 def strStr(self, haystack, needle):
     if needle == "":

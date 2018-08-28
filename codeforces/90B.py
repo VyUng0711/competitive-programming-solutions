@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/90/B
 #test1=[['c','b','a'],['b','c','d'],['c','b','c']]
 test1=['cba','bcd','cbc']
 def african_crossword(n,m,grid):

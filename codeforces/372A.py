@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/372/A
 def kangaroo(l):
   l=sorted(l)
   i=0

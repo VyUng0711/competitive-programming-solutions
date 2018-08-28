@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/MICEMAZE/
 import math
 import queue
 INF = math.inf

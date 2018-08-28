@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/439/B
 def dumb_guy(x,l):
   a=sorted(l)
   total=0

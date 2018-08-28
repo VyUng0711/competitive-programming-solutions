@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/677/A
 def min_width(l,height):
     min_width=0
     for i in range(len(l)):

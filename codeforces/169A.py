@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/169/A
 def chores(n,a,b,h):
   h.sort()
   return (h[b]-h[b-1])

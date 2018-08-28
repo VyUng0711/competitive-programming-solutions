@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/551/A
 def gukiz_contest(l):
   a=l[:]
   a=sorted(a)

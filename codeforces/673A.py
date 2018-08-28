@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/673/A
 def watch_tv(minutes):
     i=0
     minutes += [200]

@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/camelcase/problem
 # import string
 def camelcase(s):
   count = 1

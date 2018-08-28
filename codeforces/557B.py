@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/557/B
 def pasha_and_tea(n,w,l):
   s=sorted(l)
   if s[n]>=s[0]*2:

@@ -1,3 +1,5 @@
+# http://www.lightoj.com/volume_showproblem.php?problem=1074
+
 INF = float('inf')
 class triad():
 	def __init__(self, start, target, weight):

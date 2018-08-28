@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/SHPATH/
 import math
 import queue
 INF = math.inf

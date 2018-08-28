@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/285/C
 def build_permutation(l):
   s=sorted(l)
   p=[]

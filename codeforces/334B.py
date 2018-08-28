@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/334/B
 def eight_point_sets_2(s):
   x = list(set([a[0] for a in s]))
   x.sort()

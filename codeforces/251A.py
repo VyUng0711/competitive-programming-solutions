@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/251/A
 def points_on_line(l,d):
   j=0
   combination=0

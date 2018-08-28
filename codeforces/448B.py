@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/448/B
 def suffix_structure(s,t):
   j = 0
   for i in range(len(s)):

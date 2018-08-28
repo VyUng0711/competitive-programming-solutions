@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/UCV2013H/
 from queue import Queue
 """
 input = [[1,1,1,1,1,1,1,1,1,1],

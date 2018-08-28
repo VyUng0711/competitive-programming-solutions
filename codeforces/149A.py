@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/149/A
 def business_trip(k,l):
   s=sorted(l)
   total=0

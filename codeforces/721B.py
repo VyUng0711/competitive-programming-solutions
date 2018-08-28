@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/721/B
 def password(n,k,passwords, correct):
   lengths=[]
   

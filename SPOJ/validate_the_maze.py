@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/MAKEMAZE/
 from queue import Queue 
  
 def one_e_point(m):

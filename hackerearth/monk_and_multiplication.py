@@ -1,3 +1,4 @@
+# https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/practice-problems/algorithm/monk-and-multiplication/
 import queue 
 n = int(input())
 array = list(map(int, input().split()))

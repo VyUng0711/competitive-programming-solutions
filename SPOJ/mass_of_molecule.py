@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/MMASS/
 def mmass(m):
   mass = {'C':12, 'O':16, 'H':1}
   stack = []

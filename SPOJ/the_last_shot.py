@@ -1,3 +1,4 @@
+# https://www.spoj.com/problems/LASTSHOT/
 class Scanner():
     def __generator__():
         while True:

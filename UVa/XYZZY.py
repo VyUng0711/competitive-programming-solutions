@@ -1,3 +1,4 @@
+# UVA
 import queue
 INF = float('inf')
 class Triad():

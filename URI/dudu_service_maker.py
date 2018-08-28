@@ -1,3 +1,4 @@
+# https://www.urionlinejudge.com.br/judge/en/problems/view/1610
 def find_one_loop(source, graph, n):
   stack = []
   stack.append(source)

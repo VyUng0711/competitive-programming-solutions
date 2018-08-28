@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/558/A
 def lala_land(l):
   #s=sorted(l,key=lambda x: x[0])
   count_negatives=0

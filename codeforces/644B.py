@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/644/B
 import queue
 def processing_queries(n,b,q):
   result=[]

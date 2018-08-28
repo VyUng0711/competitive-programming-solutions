@@ -1,3 +1,4 @@
+# http://codeforces.com/problemset/problem/61/B
 def hard_work(str1,str2,str3,student_str):
   str1=delete_signs(str1)
   str2=delete_signs(str2)

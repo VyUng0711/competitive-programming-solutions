@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/maximum-subarray/description/
 def maxSubArray(self, nums):
     global_max = nums[0]
     max_so_far = nums[0]
