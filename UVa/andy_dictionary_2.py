@@ -1,4 +1,27 @@
 # https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2003
+# 1st solution:
+text = ""
+while True:
+  try:
+    this_line = input()
+    if this_line != "":
+      if this_line[-1] == '-':
+        text += this_line[:-1]
+      else:
+        text += this_line + " "
+  except EOFError:
+    break
+    
+  out_text = ""
+  for letter in text:
+    if letter.isalpha() or letter == '-' or letter == ' ':
+      out_text += letter
+    else:
+      out_text += ' '
+  ans = set([w.lower() for w in out_text.split()])
+print(*sorted(ans), sep = "\n")
+
+# 2nd solution:
 import string
 alphabet = set(string.ascii_lowercase)
 alphabet.add('-')
