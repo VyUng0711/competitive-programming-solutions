@@ -2,64 +2,75 @@
 import math
 import queue
 INF = float('inf')
-class Node:
-    def __init__(self, id, dist):
-        self.id = id
-        self.dist = dist
-    def __lt__(self, other):
-        return(self.dist <= other.dist)
+class Scanner:
+    def __generator__():
+        while True:
+            try:
+                buff = input().strip().split()
+                for x in buff:
+                    yield x
+            except EOFError:
+                exit()
+                
+    sc = __generator__()
+    def next():
+        return Scanner.sc.__next__()
+      
+# class Node:
+#     def __init__(self, id, dist):
+#         self.id = id
+#         self.dist = dist
+#     def __lt__(self, other):
+#         return(self.dist <= other.dist)
      
-def prim(source):
+def prim(source, graph, dist, visited):
+    n = len(graph)
     pq = queue.PriorityQueue()
-    pq.put(Node(source, 0))
+    pq.put((0, source))
     dist[source] = 0
     while not pq.empty():
-        top = pq.get()
-        u = top.id
+        w, u = pq.get()
         visited[u] = True
-        for neighbor in graph[u]:
-            v = neighbor.id
-            w = neighbor.dist
+        for v in range(n):
+            w = graph[u][v]
             if not visited[v] and dist[v] > w:
                 dist[v] = w
-                pq.put(Node(v, w))
-                path[v] = u
-                
-while True:
-    try:
-        n = int(input())
-        b = []
-        for _ in range(n):
-            x, y = map(int, input().split())
-            b.append((x, y))
-        graph = [[] for i in range(n)]
-        for i in range(n):
-            for j in range(n):
-                if i != j:
-                    curr_dist = math.sqrt(
-                        (b[i][1] - b[j][1])**2 + (b[i][0] - b[j][0])**2)
-                    graph[i].append(Node(j, curr_dist))
-                    graph[j].append(Node(i, curr_dist))
-        dist = [INF for i in range(n)]
-        path = [-1 for i in range(n)]
-        visited = [False for i in range(n)]
-        prim(0)
-        # print(dist)
-        m = int(input())
-        available = set()
-        for k in range(m):
-            a, b = map(int, input().split())
-            available.add((a - 1, b - 1))
-            available.add((b - 1, a - 1))
-        total = 0
-        for i in range(n):
-            if (i, path[i]) in available:
-                continue
-            else:
-                total += dist[i]
-        print("{0:.2f}".format(total))
-                
-            
-    except EOFError:
-        break
-    
+                pq.put((w, v))
+
+def solve():
+  while True:
+  #     try:
+      n = int(Scanner.next())
+      buildings = [None] * n
+      for i in range(n):
+          buildings[i] = (int(Scanner.next()), int(Scanner.next()))
+          
+      graph = [[INF] * n for i in range(n)]
+
+      dist = [INF for i in range(n)]
+      visited = [False for i in range(n)]
+
+      # print(dist)
+
+      m = int(Scanner.next())
+
+      for k in range(m):
+          a, b = int(Scanner.next()), int(Scanner.next())
+          graph[a - 1][b - 1] = 0
+          graph[b - 1][a - 1] = 0
+
+      # O(n^2)
+      for i in range(n):
+          for j in range(i + 1, n):
+            if graph[i][j] != 0:
+              curr_dist = math.sqrt(
+                  (buildings[i][1] - buildings[j][1])**2 + (buildings[i][0] - buildings[j][0])**2)
+              graph[i][j] = curr_dist
+              graph[j][i] = curr_dist
+  #             graph[i].append(Node(j, curr_dist))
+  #             graph[j].append(Node(i, curr_dist))
+      # O(n log n)
+      prim(0, graph, dist, visited)
+      print("{0:.2f}".format(sum(dist)))
+
+solve()
