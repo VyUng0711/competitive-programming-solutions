@@ -1,0 +1,6 @@
+# Write your MySQL query statement below
+SELECT Scores.Score, count(Ranking.Score) as Rank
+FROM Scores, (SELECT DISTINCT Score from Scores) Ranking
+WHERE Ranking.Score >= Scores.Score
+GROUP BY Scores.Id
+ORDER BY Scores.Score DESC
