@@ -10,6 +10,8 @@ def unionSet(u, v):
   vp = findSet(v)
   if up == vp:
     return
+  global count
+  count -= 1
   if ranks[up] > ranks[vp]:
     parent[vp] = up
 
@@ -26,16 +28,15 @@ blankline = input()
 
 
 for t in range(num_test):
+  
   num_people, num_tree = map(int, input().split())
   graph = [set() for _ in range(num_people)]
   parent = [i for i in range(num_people)]
   ranks = [0 for i in range(num_people)]
   
-  
-  
   while True:
     try:
-      this_line = input()
+      this_line = input() 
       # print(this_line)
       if this_line != '':
         i, j = map(int, this_line.split())
@@ -49,16 +50,19 @@ for t in range(num_test):
     except EOFError:
       break
       
-  print(graph)
+  # print(graph)
+  # O(P^2 * log(P))
+  count = num_people
   for i in range(len(graph) - 1):
     for j in range(i + 1, len(graph)):
-      if graph[i] == graph[j]:
+      if graph[i] == graph[j]: # O(1)
         unionSet(parent[i], parent[j])
-  count = 0
-  for k in range(len(parent)):
-    if k == parent[k]:
-      count += 1
-  print(count)
-  print()
         
-     
+        
+#   count = 0
+#   for k in range(len(parent)):
+#     if k == parent[k]:
+#       count += 1
+  print(count)
+  if t != num_test - 1:
+    print()
