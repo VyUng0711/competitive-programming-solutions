@@ -17,7 +17,7 @@ class Solution:
                 y, x = q.get()
                 for dy, dx in DIR:
                     new_x = x + dx
-                    new_y = y + dx
+                    new_y = y + dy
                     if new_x >= 0 and new_x < len(grid[0]) and new_y >= 0 and new_y < len(grid):
                         if grid[new_y][new_x] == "1":
                             q.put((new_y, new_x))
