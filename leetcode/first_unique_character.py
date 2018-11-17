@@ -1,4 +1,17 @@
 # https://leetcode.com/problems/first-unique-character-in-a-string/description/
+
+class Solution:
+    def firstUniqChar(self, s):
+        d = {}
+        for i in range(len(s)):
+            d[s[i]] = d.get(s[i], 0) + 1
+        print(d)
+        for j in range(len(s)):
+            if d[s[j]] == 1:
+                return j
+        return -1
+
+
 def firstUniqChar(s):
     if s == "":
         return -1

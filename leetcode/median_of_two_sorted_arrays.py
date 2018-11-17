@@ -27,9 +27,40 @@ class Solution(object):
         else:
             median = merged[len(merged)//2]
         return median
+
 # Complexity O(log(r - l) * (log(n) + log(m))) 
 # with r - l is the range of our binary search for the median
+# Simple version:
 
+import bisect
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2):
+        def find(k): 
+            low = -10 ** 6
+            high = 10 ** 6
+            while low <= high:
+                mid = (low + high) // 2
+
+                left_a = bisect.bisect_right(nums1, mid)
+                left_b = bisect.bisect_right(nums2, mid)
+
+                if left_a + left_b >= k:
+                    res = mid
+                    high = mid - 1
+                # return min(max(nums1[left_a - 1], nums2[left_b - 1]), median)
+                else:
+                    low = mid + 1
+            return res
+
+        N = len(nums1) + len(nums2)
+        median = find((N + 1) // 2)
+        if N % 2 == 1:
+            return find(N // 2 + 1)
+        else:
+        # median2 = find((N + 1) // 2 + 1))
+            return (find(N // 2) + find(N // 2 + 1)) / 2
+
+# More complicated version:
 import bisect
 class Solution(object):
     def findMedianSortedArrays(self, nums1, nums2):
