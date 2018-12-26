@@ -1,5 +1,43 @@
 # https://leetcode.com/problems/word-search/description/
+# SHORTER BACKTRACKING:
 
+class Solution(object):
+    def __init__(self):
+        self.cursor = 0
+        self.DIR = [(-1, 0), (0, -1), (0, 1), (1, 0)]
+        
+    def exist(self, board, word):
+        """
+        :type board: List[List[str]]
+        :type word: str
+        :rtype: bool
+        """
+        visited = [[False] * len(board[0]) for _ in range(len(board))]
+        
+        def dfs(board, start_y, start_x):
+            self.cursor += 1
+            visited[start_y][start_x] = True
+            if self.cursor == len(word):
+                return True
+            
+            for dx, dy in self.DIR:
+                x = start_x + dx
+                y = start_y + dy
+                if x >= 0 and y >= 0 and x < len(board[0]) and y < len(board):
+                    if not visited[y][x] and board[y][x] == word[self.cursor]:
+                        if dfs(board, y, x):
+                            return True
+            self.cursor -= 1
+            visited[start_y][start_x] = False
+            return False
+        
+        for i in range(len(board)):
+            for j in range(len(board[0])):
+                if board[i][j] == word[0]:
+                    res = dfs(board, i, j)
+                    if res:
+                        return True
+        return False
 # RECURSION APPROACH:
 class Solution:
     def __init__(self):
