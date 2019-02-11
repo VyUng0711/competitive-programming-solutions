@@ -1,0 +1,20 @@
+SELECT d_name as "Department", Employee.Name as "Employee", new.max_salary as "Salary"
+FROM Employee
+JOIN
+    (SELECT d.Id as d_id, d.Name as d_name, MAX(e.Salary) as max_salary FROM    Employee e JOIN Department d ON e.DepartmentId = d.Id GROUP BY d.Name) new
+ON Employee.Salary = max_salary
+AND new.d_id = Employee.DepartmentId
+
+
+# A clearer approach:
+
+SELECT Department.Name, Employee.Name, Salary
+FROM Employee JOIN Department
+ON Employee.DepartmentId = Department.Id
+WHERE (DepartmentId, Salary)
+IN
+(SELECT DepartmentId, MAX(Salary)
+FROM Employee
+GROUP BY DepartmentId)
+
+

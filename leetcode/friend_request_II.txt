@@ -1,0 +1,16 @@
+# Write your MySQL query statement below
+# SELECT c.r_id, max(c.count_requester) FROM
+SELECT r_id AS "id", count_requester AS "num" FROM 
+(
+    SELECT
+requester_id as r_id,
+COUNT(requester_id) as count_requester FROM
+(
+    (SELECT requester_id  FROM request_accepted ) UNION ALL (SELECT accepter_id FROM request_accepted)
+) as u
+
+    GROUP BY requester_id)  as c 
+    
+ORDER BY count_requester DESC
+LIMIT 1
+

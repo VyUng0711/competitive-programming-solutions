@@ -1,0 +1,9 @@
+SELECT MAX(c.num) AS "num" FROM
+(SELECT num, COUNT(num) as count_num FROM number GROUP BY num) c
+WHERE count_num = 1
+
+# Clearer way:
+SELECT MAX(c.num) AS "num" FROM
+(SELECT num FROM number GROUP BY num HAVING count(num) = 1 ) c
+
+
